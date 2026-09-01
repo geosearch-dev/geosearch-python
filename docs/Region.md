@@ -1,0 +1,41 @@
+# Region
+
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**id** | **int** |  | [optional] 
+**geoname_id** | **int** |  | [optional] 
+**country_code** | **str** |  | [optional] 
+**admin_code** | **str** |  | [optional] 
+**name** | **str** |  | [optional] 
+**ascii_name** | **str** |  | [optional] 
+**level** | **int** |  | [optional] 
+**parent_geoname_id** | **int** |  | [optional] 
+**population** | **int** |  | [optional] 
+**latitude** | **float** |  | [optional] 
+**longitude** | **float** |  | [optional] 
+**country** | [**CountryRef**](CountryRef.md) |  | [optional] 
+**geometry** | [**GeoJSONMultiPolygon**](GeoJSONMultiPolygon.md) | Region boundary. Returned by default on &#x60;GET /v1/regions/{id}&#x60;, and on request via &#x60;?fields&#x3D;geometry&#x60; on &#x60;GET /v1/regions&#x60; and &#x60;GET /v1/countries/{code}/regions&#x60;.  REQUIRES A PAID PLAN. On all three of those routes this key is OMITTED ENTIRELY for a Free-tier key — absent, not null, with a 200 status and no error. A client reading &#x60;data.geometry.type&#x60; unconditionally will fail on a null dereference.  To be told explicitly rather than silently, request the polygon from &#x60;GET /v1/boundaries/{geoname_id}&#x60;, which answers a Free key with a 403 and an upgrade link. | [optional] 
+
+## Example
+
+```python
+from geoapi.models.region import Region
+
+# TODO update the JSON string below
+json = "{}"
+# create an instance of Region from a JSON string
+region_instance = Region.from_json(json)
+# print the JSON string representation of the object
+print(Region.to_json())
+
+# convert the object into a dict
+region_dict = region_instance.to_dict()
+# create an instance of Region from a dict
+region_from_dict = Region.from_dict(region_dict)
+```
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+
