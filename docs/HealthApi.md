@@ -1,6 +1,6 @@
 # geoapi.HealthApi
 
-All URIs are relative to *http://localhost*
+All URIs are relative to *https://geosearch.dev*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -23,10 +23,10 @@ from geoapi.models.get_status200_response import GetStatus200Response
 from geoapi.rest import ApiException
 from pprint import pprint
 
-# Defining the host is optional and defaults to http://localhost
+# Defining the host is optional and defaults to https://geosearch.dev
 # See configuration.py for a list of all supported configuration parameters.
 configuration = geoapi.Configuration(
-    host = "http://localhost"
+    host = "https://geosearch.dev"
 )
 
 

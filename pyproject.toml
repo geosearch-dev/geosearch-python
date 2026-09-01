@@ -1,6 +1,6 @@
 [project]
 name = "geoapi"
-version = "1.2.0"
+version = "1.2.1"
 description = "GeoAPI"
 authors = [
   {name = "GeoAPI Support",email = "team@openapitools.org"},

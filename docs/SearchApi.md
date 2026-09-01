@@ -1,6 +1,6 @@
 # geoapi.SearchApi
 
-All URIs are relative to *http://localhost*
+All URIs are relative to *https://geosearch.dev*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -29,10 +29,10 @@ from geoapi.models.autocomplete_list_response import AutocompleteListResponse
 from geoapi.rest import ApiException
 from pprint import pprint
 
-# Defining the host is optional and defaults to http://localhost
+# Defining the host is optional and defaults to https://geosearch.dev
 # See configuration.py for a list of all supported configuration parameters.
 configuration = geoapi.Configuration(
-    host = "http://localhost"
+    host = "https://geosearch.dev"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -162,10 +162,10 @@ from geoapi.models.hierarchy_list_response import HierarchyListResponse
 from geoapi.rest import ApiException
 from pprint import pprint
 
-# Defining the host is optional and defaults to http://localhost
+# Defining the host is optional and defaults to https://geosearch.dev
 # See configuration.py for a list of all supported configuration parameters.
 configuration = geoapi.Configuration(
-    host = "http://localhost"
+    host = "https://geosearch.dev"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -252,10 +252,10 @@ from geoapi.models.reverse_geocode_single_response import ReverseGeocodeSingleRe
 from geoapi.rest import ApiException
 from pprint import pprint
 
-# Defining the host is optional and defaults to http://localhost
+# Defining the host is optional and defaults to https://geosearch.dev
 # See configuration.py for a list of all supported configuration parameters.
 configuration = geoapi.Configuration(
-    host = "http://localhost"
+    host = "https://geosearch.dev"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -341,10 +341,10 @@ from geoapi.models.search_list_response import SearchListResponse
 from geoapi.rest import ApiException
 from pprint import pprint
 
-# Defining the host is optional and defaults to http://localhost
+# Defining the host is optional and defaults to https://geosearch.dev
 # See configuration.py for a list of all supported configuration parameters.
 configuration = geoapi.Configuration(
-    host = "http://localhost"
+    host = "https://geosearch.dev"
 )
 
 # The client must configure the authentication and authorization parameters
