@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from geoapi.models.reverse_geocode_result import ReverseGeocodeResult
+from geosearch.models.reverse_geocode_result import ReverseGeocodeResult
 
 # TODO update the JSON string below
 json = "{}"

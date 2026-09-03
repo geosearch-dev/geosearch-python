@@ -22,7 +22,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from geoapi.models.region import Region
+from geosearch.models.region import Region
 
 # TODO update the JSON string below
 json = "{}"

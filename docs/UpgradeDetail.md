@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from geoapi.models.upgrade_detail import UpgradeDetail
+from geosearch.models.upgrade_detail import UpgradeDetail
 
 # TODO update the JSON string below
 json = "{}"

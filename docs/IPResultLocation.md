@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from geoapi.models.ip_result_location import IPResultLocation
+from geosearch.models.ip_result_location import IPResultLocation
 
 # TODO update the JSON string below
 json = "{}"

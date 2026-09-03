@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from geoapi.models.region_ref import RegionRef
+from geosearch.models.region_ref import RegionRef
 
 # TODO update the JSON string below
 json = "{}"

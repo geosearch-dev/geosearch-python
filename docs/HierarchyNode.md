@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from geoapi.models.hierarchy_node import HierarchyNode
+from geosearch.models.hierarchy_node import HierarchyNode
 
 # TODO update the JSON string below
 json = "{}"

@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from geoapi.models.timezone_list_response import TimezoneListResponse
+from geosearch.models.timezone_list_response import TimezoneListResponse
 
 # TODO update the JSON string below
 json = "{}"

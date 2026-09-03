@@ -1,4 +1,4 @@
-# geoapi.HealthApi
+# geosearch.HealthApi
 
 All URIs are relative to *https://geosearch.dev*
 
@@ -18,22 +18,22 @@ Returns the API health status and database connectivity. No authentication requi
 
 
 ```python
-import geoapi
-from geoapi.models.get_status200_response import GetStatus200Response
-from geoapi.rest import ApiException
+import geosearch
+from geosearch.models.get_status200_response import GetStatus200Response
+from geosearch.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://geosearch.dev
 # See configuration.py for a list of all supported configuration parameters.
-configuration = geoapi.Configuration(
+configuration = geosearch.Configuration(
     host = "https://geosearch.dev"
 )
 
 
 # Enter a context with an instance of the API client
-with geoapi.ApiClient(configuration) as api_client:
+with geosearch.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = geoapi.HealthApi(api_client)
+    api_instance = geosearch.HealthApi(api_client)
 
     try:
         # Health check

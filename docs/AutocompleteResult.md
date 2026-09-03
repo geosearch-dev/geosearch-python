@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from geoapi.models.autocomplete_result import AutocompleteResult
+from geosearch.models.autocomplete_result import AutocompleteResult
 
 # TODO update the JSON string below
 json = "{}"

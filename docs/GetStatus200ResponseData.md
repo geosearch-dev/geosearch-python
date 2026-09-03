@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from geoapi.models.get_status200_response_data import GetStatus200ResponseData
+from geosearch.models.get_status200_response_data import GetStatus200ResponseData
 
 # TODO update the JSON string below
 json = "{}"

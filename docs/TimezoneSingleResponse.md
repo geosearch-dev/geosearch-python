@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from geoapi.models.timezone_single_response import TimezoneSingleResponse
+from geosearch.models.timezone_single_response import TimezoneSingleResponse
 
 # TODO update the JSON string below
 json = "{}"

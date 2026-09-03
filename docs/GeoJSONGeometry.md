@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from geoapi.models.geo_json_geometry import GeoJSONGeometry
+from geosearch.models.geo_json_geometry import GeoJSONGeometry
 
 # TODO update the JSON string below
 json = "{}"

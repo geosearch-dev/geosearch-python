@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from geoapi.models.batch_request import BatchRequest
+from geosearch.models.batch_request import BatchRequest
 
 # TODO update the JSON string below
 json = "{}"

@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from geoapi.models.reverse_geocode_single_response import ReverseGeocodeSingleResponse
+from geosearch.models.reverse_geocode_single_response import ReverseGeocodeSingleResponse
 
 # TODO update the JSON string below
 json = "{}"

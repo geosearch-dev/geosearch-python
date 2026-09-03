@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from geoapi.models.ip_result_continent import IPResultContinent
+from geosearch.models.ip_result_continent import IPResultContinent
 
 # TODO update the JSON string below
 json = "{}"

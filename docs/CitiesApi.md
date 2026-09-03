@@ -1,4 +1,4 @@
-# geoapi.CitiesApi
+# geosearch.CitiesApi
 
 All URIs are relative to *https://geosearch.dev*
 
@@ -24,14 +24,14 @@ the city itself up through region, country, and continent.
 * Api Key Authentication (apiKeyAuth):
 
 ```python
-import geoapi
-from geoapi.models.hierarchy_list_response import HierarchyListResponse
-from geoapi.rest import ApiException
+import geosearch
+from geosearch.models.hierarchy_list_response import HierarchyListResponse
+from geosearch.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://geosearch.dev
 # See configuration.py for a list of all supported configuration parameters.
-configuration = geoapi.Configuration(
+configuration = geosearch.Configuration(
     host = "https://geosearch.dev"
 )
 
@@ -47,9 +47,9 @@ configuration.api_key['apiKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['apiKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with geoapi.ApiClient(configuration) as api_client:
+with geosearch.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = geoapi.CitiesApi(api_client)
+    api_instance = geosearch.CitiesApi(api_client)
     id = 5391959 # int | City ID
     lang = 'de' # str | ISO 639-1 language code for localized names (e.g., de, fr, ja) (optional)
 
@@ -108,14 +108,14 @@ Returns a single city by its numeric ID.
 * Api Key Authentication (apiKeyAuth):
 
 ```python
-import geoapi
-from geoapi.models.city_single_response import CitySingleResponse
-from geoapi.rest import ApiException
+import geosearch
+from geosearch.models.city_single_response import CitySingleResponse
+from geosearch.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://geosearch.dev
 # See configuration.py for a list of all supported configuration parameters.
-configuration = geoapi.Configuration(
+configuration = geosearch.Configuration(
     host = "https://geosearch.dev"
 )
 
@@ -131,9 +131,9 @@ configuration.api_key['apiKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['apiKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with geoapi.ApiClient(configuration) as api_client:
+with geosearch.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = geoapi.CitiesApi(api_client)
+    api_instance = geosearch.CitiesApi(api_client)
     id = 5391959 # int | City ID
     lang = 'de' # str | ISO 639-1 language code for localized names (e.g., de, fr, ja) (optional)
     fields = 'name,population,iso_code' # str | Comma-separated list of fields to include in the response (optional)
@@ -195,14 +195,14 @@ Returns a paginated list of cities with optional filtering by country, admin cod
 * Api Key Authentication (apiKeyAuth):
 
 ```python
-import geoapi
-from geoapi.models.city_list_response import CityListResponse
-from geoapi.rest import ApiException
+import geosearch
+from geosearch.models.city_list_response import CityListResponse
+from geosearch.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://geosearch.dev
 # See configuration.py for a list of all supported configuration parameters.
-configuration = geoapi.Configuration(
+configuration = geosearch.Configuration(
     host = "https://geosearch.dev"
 )
 
@@ -218,9 +218,9 @@ configuration.api_key['apiKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['apiKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with geoapi.ApiClient(configuration) as api_client:
+with geosearch.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = geoapi.CitiesApi(api_client)
+    api_instance = geosearch.CitiesApi(api_client)
     lang = 'de' # str | ISO 639-1 language code for localized names (e.g., de, fr, ja) (optional)
     country = 'US,CA' # str | Filter by ISO alpha-2 country codes (comma-separated) (optional)
     admin1 = 'CA' # str | Filter by admin1 code (state/province) (optional)
@@ -309,14 +309,14 @@ Results are ordered by distance. Uses PostGIS spatial index for fast lookups.
 * Api Key Authentication (apiKeyAuth):
 
 ```python
-import geoapi
-from geoapi.models.nearby_city_list_response import NearbyCityListResponse
-from geoapi.rest import ApiException
+import geosearch
+from geosearch.models.nearby_city_list_response import NearbyCityListResponse
+from geosearch.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://geosearch.dev
 # See configuration.py for a list of all supported configuration parameters.
-configuration = geoapi.Configuration(
+configuration = geosearch.Configuration(
     host = "https://geosearch.dev"
 )
 
@@ -332,9 +332,9 @@ configuration.api_key['apiKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['apiKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with geoapi.ApiClient(configuration) as api_client:
+with geosearch.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = geoapi.CitiesApi(api_client)
+    api_instance = geosearch.CitiesApi(api_client)
     lat = 37.7749 # float | Latitude (-90 to 90)
     lon = -122.4194 # float | Longitude (-180 to 180)
     radius = 50 # float | Search radius in kilometers (default 50, max 200) (optional) (default to 50)

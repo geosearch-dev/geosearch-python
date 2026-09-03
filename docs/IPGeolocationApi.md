@@ -1,4 +1,4 @@
-# geoapi.IPGeolocationApi
+# geosearch.IPGeolocationApi
 
 All URIs are relative to *https://geosearch.dev*
 
@@ -20,14 +20,14 @@ Returns geolocation data for a given IPv4 or IPv6 address.
 * Api Key Authentication (apiKeyAuth):
 
 ```python
-import geoapi
-from geoapi.models.ip_single_response import IPSingleResponse
-from geoapi.rest import ApiException
+import geosearch
+from geosearch.models.ip_single_response import IPSingleResponse
+from geosearch.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://geosearch.dev
 # See configuration.py for a list of all supported configuration parameters.
-configuration = geoapi.Configuration(
+configuration = geosearch.Configuration(
     host = "https://geosearch.dev"
 )
 
@@ -43,9 +43,9 @@ configuration.api_key['apiKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['apiKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with geoapi.ApiClient(configuration) as api_client:
+with geosearch.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = geoapi.IPGeolocationApi(api_client)
+    api_instance = geosearch.IPGeolocationApi(api_client)
     address = '8.8.8.8' # str | IPv4 or IPv6 address
     lang = 'de' # str | ISO 639-1 language code for localized names (e.g., de, fr, ja) (optional)
     fields = 'name,population,iso_code' # str | Comma-separated list of fields to include in the response (optional)
@@ -108,14 +108,14 @@ and returns its geolocation data.
 * Api Key Authentication (apiKeyAuth):
 
 ```python
-import geoapi
-from geoapi.models.ip_single_response import IPSingleResponse
-from geoapi.rest import ApiException
+import geosearch
+from geosearch.models.ip_single_response import IPSingleResponse
+from geosearch.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://geosearch.dev
 # See configuration.py for a list of all supported configuration parameters.
-configuration = geoapi.Configuration(
+configuration = geosearch.Configuration(
     host = "https://geosearch.dev"
 )
 
@@ -131,9 +131,9 @@ configuration.api_key['apiKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['apiKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with geoapi.ApiClient(configuration) as api_client:
+with geosearch.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = geoapi.IPGeolocationApi(api_client)
+    api_instance = geosearch.IPGeolocationApi(api_client)
     lang = 'de' # str | ISO 639-1 language code for localized names (e.g., de, fr, ja) (optional)
     fields = 'name,population,iso_code' # str | Comma-separated list of fields to include in the response (optional)
 

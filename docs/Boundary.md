@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from geoapi.models.boundary import Boundary
+from geosearch.models.boundary import Boundary
 
 # TODO update the JSON string below
 json = "{}"

@@ -1,4 +1,4 @@
-# geoapi.BatchApi
+# geosearch.BatchApi
 
 All URIs are relative to *https://geosearch.dev*
 
@@ -21,15 +21,15 @@ Returns multiple cities in a single request. Maximum 50 IDs per request.
 * Api Key Authentication (apiKeyAuth):
 
 ```python
-import geoapi
-from geoapi.models.batch_request import BatchRequest
-from geoapi.models.city_list_response import CityListResponse
-from geoapi.rest import ApiException
+import geosearch
+from geosearch.models.batch_request import BatchRequest
+from geosearch.models.city_list_response import CityListResponse
+from geosearch.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://geosearch.dev
 # See configuration.py for a list of all supported configuration parameters.
-configuration = geoapi.Configuration(
+configuration = geosearch.Configuration(
     host = "https://geosearch.dev"
 )
 
@@ -45,9 +45,9 @@ configuration.api_key['apiKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['apiKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with geoapi.ApiClient(configuration) as api_client:
+with geosearch.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = geoapi.BatchApi(api_client)
+    api_instance = geosearch.BatchApi(api_client)
     batch_request = {"ids":[5391959,5128581,4887398]} # BatchRequest | 
     lang = 'de' # str | ISO 639-1 language code for localized names (e.g., de, fr, ja) (optional)
     fields = 'name,population,iso_code' # str | Comma-separated list of fields to include in the response (optional)
@@ -108,15 +108,15 @@ Returns multiple countries in a single request. Maximum 50 IDs per request.
 * Api Key Authentication (apiKeyAuth):
 
 ```python
-import geoapi
-from geoapi.models.batch_request import BatchRequest
-from geoapi.models.country_list_response import CountryListResponse
-from geoapi.rest import ApiException
+import geosearch
+from geosearch.models.batch_request import BatchRequest
+from geosearch.models.country_list_response import CountryListResponse
+from geosearch.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://geosearch.dev
 # See configuration.py for a list of all supported configuration parameters.
-configuration = geoapi.Configuration(
+configuration = geosearch.Configuration(
     host = "https://geosearch.dev"
 )
 
@@ -132,9 +132,9 @@ configuration.api_key['apiKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['apiKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with geoapi.ApiClient(configuration) as api_client:
+with geosearch.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = geoapi.BatchApi(api_client)
+    api_instance = geosearch.BatchApi(api_client)
     batch_request = {"ids":[6252001,2635167,2921044]} # BatchRequest | 
     lang = 'de' # str | ISO 639-1 language code for localized names (e.g., de, fr, ja) (optional)
     fields = 'name,population,iso_code' # str | Comma-separated list of fields to include in the response (optional)
@@ -195,15 +195,15 @@ Returns multiple regions in a single request. Maximum 50 IDs per request.
 * Api Key Authentication (apiKeyAuth):
 
 ```python
-import geoapi
-from geoapi.models.batch_request import BatchRequest
-from geoapi.models.region_list_response import RegionListResponse
-from geoapi.rest import ApiException
+import geosearch
+from geosearch.models.batch_request import BatchRequest
+from geosearch.models.region_list_response import RegionListResponse
+from geosearch.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://geosearch.dev
 # See configuration.py for a list of all supported configuration parameters.
-configuration = geoapi.Configuration(
+configuration = geosearch.Configuration(
     host = "https://geosearch.dev"
 )
 
@@ -219,9 +219,9 @@ configuration.api_key['apiKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['apiKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with geoapi.ApiClient(configuration) as api_client:
+with geosearch.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = geoapi.BatchApi(api_client)
+    api_instance = geosearch.BatchApi(api_client)
     batch_request = {"ids":[5332921,5128638,4862182]} # BatchRequest | 
     lang = 'de' # str | ISO 639-1 language code for localized names (e.g., de, fr, ja) (optional)
     fields = 'name,population,iso_code' # str | Comma-separated list of fields to include in the response (optional)

@@ -23,7 +23,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from geoapi.models.postal_code import PostalCode
+from geosearch.models.postal_code import PostalCode
 
 # TODO update the JSON string below
 json = "{}"

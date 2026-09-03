@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from geoapi.models.error_response_error import ErrorResponseError
+from geosearch.models.error_response_error import ErrorResponseError
 
 # TODO update the JSON string below
 json = "{}"

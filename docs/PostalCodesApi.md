@@ -1,4 +1,4 @@
-# geoapi.PostalCodesApi
+# geosearch.PostalCodesApi
 
 All URIs are relative to *https://geosearch.dev*
 
@@ -20,14 +20,14 @@ Returns a paginated list of postal codes with optional filtering by country and 
 * Api Key Authentication (apiKeyAuth):
 
 ```python
-import geoapi
-from geoapi.models.postal_code_list_response import PostalCodeListResponse
-from geoapi.rest import ApiException
+import geosearch
+from geosearch.models.postal_code_list_response import PostalCodeListResponse
+from geosearch.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://geosearch.dev
 # See configuration.py for a list of all supported configuration parameters.
-configuration = geoapi.Configuration(
+configuration = geosearch.Configuration(
     host = "https://geosearch.dev"
 )
 
@@ -43,9 +43,9 @@ configuration.api_key['apiKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['apiKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with geoapi.ApiClient(configuration) as api_client:
+with geosearch.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = geoapi.PostalCodesApi(api_client)
+    api_instance = geosearch.PostalCodesApi(api_client)
     lang = 'de' # str | ISO 639-1 language code for localized names (e.g., de, fr, ja) (optional)
     country = 'US' # str | Filter by ISO alpha-2 country codes (comma-separated) (optional)
     code = '94105' # str | Filter by postal code (optional)
@@ -120,14 +120,14 @@ Returns the nearest postal codes to a given latitude/longitude using PostGIS spa
 * Api Key Authentication (apiKeyAuth):
 
 ```python
-import geoapi
-from geoapi.models.postal_code_list_response import PostalCodeListResponse
-from geoapi.rest import ApiException
+import geosearch
+from geosearch.models.postal_code_list_response import PostalCodeListResponse
+from geosearch.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://geosearch.dev
 # See configuration.py for a list of all supported configuration parameters.
-configuration = geoapi.Configuration(
+configuration = geosearch.Configuration(
     host = "https://geosearch.dev"
 )
 
@@ -143,9 +143,9 @@ configuration.api_key['apiKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['apiKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with geoapi.ApiClient(configuration) as api_client:
+with geosearch.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = geoapi.PostalCodesApi(api_client)
+    api_instance = geosearch.PostalCodesApi(api_client)
     lat = 37.7749 # float | Latitude (-90 to 90)
     lon = -122.4194 # float | Longitude (-180 to 180)
     lang = 'de' # str | ISO 639-1 language code for localized names (e.g., de, fr, ja) (optional)

@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from geoapi.models.hierarchy_list_response import HierarchyListResponse
+from geosearch.models.hierarchy_list_response import HierarchyListResponse
 
 # TODO update the JSON string below
 json = "{}"

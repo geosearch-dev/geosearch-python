@@ -1,4 +1,4 @@
-# geoapi.SearchApi
+# geosearch.SearchApi
 
 All URIs are relative to *https://geosearch.dev*
 
@@ -24,14 +24,14 @@ Results are ranked by relevance and population. Minimum 2 characters required.
 * Api Key Authentication (apiKeyAuth):
 
 ```python
-import geoapi
-from geoapi.models.autocomplete_list_response import AutocompleteListResponse
-from geoapi.rest import ApiException
+import geosearch
+from geosearch.models.autocomplete_list_response import AutocompleteListResponse
+from geosearch.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://geosearch.dev
 # See configuration.py for a list of all supported configuration parameters.
-configuration = geoapi.Configuration(
+configuration = geosearch.Configuration(
     host = "https://geosearch.dev"
 )
 
@@ -47,9 +47,9 @@ configuration.api_key['apiKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['apiKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with geoapi.ApiClient(configuration) as api_client:
+with geosearch.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = geoapi.SearchApi(api_client)
+    api_instance = geosearch.SearchApi(api_client)
     q = 'San Fran' # str | Search query (minimum 2 characters)
     lang = 'de' # str | ISO 639-1 language code for localized names (e.g., de, fr, ja) (optional)
     limit = 10 # int | Maximum results to return (1-25, default 10) (optional) (default to 10)
@@ -157,14 +157,14 @@ The four node fields are all small, so selection would save nothing.
 * Api Key Authentication (apiKeyAuth):
 
 ```python
-import geoapi
-from geoapi.models.hierarchy_list_response import HierarchyListResponse
-from geoapi.rest import ApiException
+import geosearch
+from geosearch.models.hierarchy_list_response import HierarchyListResponse
+from geosearch.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://geosearch.dev
 # See configuration.py for a list of all supported configuration parameters.
-configuration = geoapi.Configuration(
+configuration = geosearch.Configuration(
     host = "https://geosearch.dev"
 )
 
@@ -180,9 +180,9 @@ configuration.api_key['apiKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['apiKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with geoapi.ApiClient(configuration) as api_client:
+with geosearch.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = geoapi.SearchApi(api_client)
+    api_instance = geosearch.SearchApi(api_client)
     lat = 37.7749 # float | Latitude (-90 to 90). Must be a finite number: `NaN` and `Infinity` are rejected with a 400 rather than being passed to the spatial index, which would answer them with an ordinary \"not found\".
     lon = -122.4194 # float | Longitude (-180 to 180). Must be a finite number; see `lat`.
     lang = 'de' # str | ISO 639-1 language code for localized names (e.g., de, fr, ja) (optional)
@@ -247,14 +247,14 @@ Uses PostGIS spatial index for fast reverse geocoding.
 * Api Key Authentication (apiKeyAuth):
 
 ```python
-import geoapi
-from geoapi.models.reverse_geocode_single_response import ReverseGeocodeSingleResponse
-from geoapi.rest import ApiException
+import geosearch
+from geosearch.models.reverse_geocode_single_response import ReverseGeocodeSingleResponse
+from geosearch.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://geosearch.dev
 # See configuration.py for a list of all supported configuration parameters.
-configuration = geoapi.Configuration(
+configuration = geosearch.Configuration(
     host = "https://geosearch.dev"
 )
 
@@ -270,9 +270,9 @@ configuration.api_key['apiKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['apiKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with geoapi.ApiClient(configuration) as api_client:
+with geosearch.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = geoapi.SearchApi(api_client)
+    api_instance = geosearch.SearchApi(api_client)
     lat = 37.7749 # float | Latitude (-90 to 90)
     lon = -122.4194 # float | Longitude (-180 to 180)
     fields = 'name,population,iso_code' # str | Comma-separated list of fields to include in the response (optional)
@@ -336,14 +336,14 @@ Results are ranked by relevance and population. Uses simple limit pagination (no
 * Api Key Authentication (apiKeyAuth):
 
 ```python
-import geoapi
-from geoapi.models.search_list_response import SearchListResponse
-from geoapi.rest import ApiException
+import geosearch
+from geosearch.models.search_list_response import SearchListResponse
+from geosearch.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://geosearch.dev
 # See configuration.py for a list of all supported configuration parameters.
-configuration = geoapi.Configuration(
+configuration = geosearch.Configuration(
     host = "https://geosearch.dev"
 )
 
@@ -359,9 +359,9 @@ configuration.api_key['apiKeyAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['apiKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with geoapi.ApiClient(configuration) as api_client:
+with geosearch.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = geoapi.SearchApi(api_client)
+    api_instance = geosearch.SearchApi(api_client)
     q = 'San Fran' # str | Search query (minimum 2 characters)
     lang = 'de' # str | ISO 639-1 language code for localized names (e.g., de, fr, ja) (optional)
     type = 'city' # str | Filter by entity type (comma-separated). Allowed: country, region, city. (optional)

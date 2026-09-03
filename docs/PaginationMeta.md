@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from geoapi.models.pagination_meta import PaginationMeta
+from geosearch.models.pagination_meta import PaginationMeta
 
 # TODO update the JSON string below
 json = "{}"

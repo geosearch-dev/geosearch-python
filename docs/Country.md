@@ -32,7 +32,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from geoapi.models.country import Country
+from geosearch.models.country import Country
 
 # TODO update the JSON string below
 json = "{}"

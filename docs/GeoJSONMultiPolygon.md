@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from geoapi.models.geo_json_multi_polygon import GeoJSONMultiPolygon
+from geosearch.models.geo_json_multi_polygon import GeoJSONMultiPolygon
 
 # TODO update the JSON string below
 json = "{}"

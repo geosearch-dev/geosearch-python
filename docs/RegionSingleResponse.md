@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from geoapi.models.region_single_response import RegionSingleResponse
+from geosearch.models.region_single_response import RegionSingleResponse
 
 # TODO update the JSON string below
 json = "{}"
