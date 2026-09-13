@@ -1,6 +1,6 @@
 [project]
 name = "geosearch"
-version = "1.3.2"
+version = "1.3.3"
 description = "GeoSearch"
 authors = [
   {name = "GeoSearch Support",email = "info@geosearch.dev"},
